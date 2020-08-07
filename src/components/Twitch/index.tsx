@@ -113,8 +113,8 @@ const TwitchEmbedVideo = (props: PropsType) => {
 TwitchEmbedVideo.defaultProps = {
   targetId: "twitch-embed",
   layout: "video",
-  width: "940",
-  height: "480",
+  width: "100%",
+  height: "600px",
   autoplay: true,
   muted: false,
   parent: ["polynation.ca"],

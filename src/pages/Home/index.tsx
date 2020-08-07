@@ -17,8 +17,13 @@ const Home = () => {
         <H2>The vibe is alive</H2>
         <H1 className={styles.HeadingTemp}>COMING SOON!</H1>
       </div>
-      {/*@ts-ignore */}
-      <Twitch channel="dusk2dawnproductions" targetClass={styles.TwtichEmbed} />
+      <div className={styles.TwitchWrapper}>
+        {/*@ts-ignore */}
+        <Twitch
+          channel="dusk2dawnproductions"
+          targetClass={styles.TwtichEmbed}
+        />
+      </div>
       <footer className={styles.Footer}>
         <a
           className={styles.ExternalLink}

@@ -18,8 +18,13 @@
   }
 }
 
+.TwitchWrapper {
+  width: 100%;
+  min-height: 600px;
+}
+
 .TwtichEmbed {
-  max-width: 100%;
+  height: 600px;
 }
 
 .MainWrapper {
