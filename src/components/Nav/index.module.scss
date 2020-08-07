@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.Nav {
+  position: absolute;
+  background-color: rgba(34, 29, 52, 0.7);
+  width: 100%;
+}
+
+.Links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.LinkWrapper {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.Link {
+  color: $ziggurat-blue;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $bermuda-grey;
+  }
+}
+
+@include medium {
+  .Links {
+    justify-content: flex-start;
+  }
+}
