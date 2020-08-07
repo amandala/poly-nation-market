@@ -52,13 +52,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(34, 29, 52, 0.7);
   padding: 20px;
 }
 
 .HeadingTemp {
-  color: $ziggurat-blue;
+  color: white;
   font-weight: 700;
+}
+
+.Vibe {
+  margin-bottom: 24px;
 }
 
 @include medium {

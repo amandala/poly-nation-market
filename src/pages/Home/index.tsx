@@ -43,6 +43,11 @@ const Home = () => {
           {/* <H2 className={styles.Date}>August 22 & 23</H2> */}
         </div>
         <div className={styles.MainWrapper}>
+          <img
+            className={styles.Vibe}
+            src="/vibehive-logo.png"
+            alt="Vibe Hive Logo"
+          />
           <H2 className={styles.HeadingTemp}>The vibe is alive and</H2>
           <H1 className={styles.HeadingTemp}>COMING SOON!</H1>
         </div>
