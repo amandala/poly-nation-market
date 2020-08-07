@@ -40,10 +40,12 @@ const Home = () => {
     <div className={styles.Page}>
       <div className={styles.Wrapper}>
         <div className={styles.Header}>
-          <H2 className={styles.Date}>August 22 & 23</H2>
-          <img className={styles.PolyNation} src="/pn-wordmark.png" />
+          {/* <H2 className={styles.Date}>August 22 & 23</H2> */}
         </div>
-        <div className={styles.MainWrapper}></div>
+        <div className={styles.MainWrapper}>
+          <H2 className={styles.HeadingTemp}>The vibe is alive and</H2>
+          <H1 className={styles.HeadingTemp}>COMING SOON!</H1>
+        </div>
         <footer className={styles.Footer}>
           <a
             className={styles.ExternalLink}

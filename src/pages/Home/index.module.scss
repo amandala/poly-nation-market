@@ -12,6 +12,8 @@
   width: 100%;
   background-image: url("/bees.jpg");
   min-height: 100vh;
+
+  margin: 0 auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +21,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 0 15px;
+  padding: 100px 20px 15px;
 }
 
 .Header {
@@ -29,6 +31,7 @@
 .Date {
   color: $steel-grey;
   font-weight: 400;
+  margin-top: 150px;
 }
 
 .ExternalLink {
@@ -40,5 +43,26 @@
   &:hover,
   &:visited {
     color: $ziggurat-blue;
+  }
+}
+
+.MainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.HeadingTemp {
+  color: $ziggurat-blue;
+  font-weight: 700;
+}
+
+@include medium {
+  .Wrapper {
+    padding: 100px 0 15px;
   }
 }
