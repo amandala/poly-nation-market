@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import Product from "./Product";
+import Product from "../Product";
+
+import styles from "./index.module.scss";
 
 class Products extends Component {
   render() {
@@ -14,7 +16,7 @@ class Products extends Component {
       );
     });
 
-    return <div className="Product-wrapper">{products}</div>;
+    return <div className={styles.Products}>{products}</div>;
   }
 }
 

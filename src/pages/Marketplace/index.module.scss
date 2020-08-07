@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.Header {
+  background-color: #222;
+  background-image: url("/bees.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.Title {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.Content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+@include medium {
+  .Content {
+    padding: 0;
+  }
+}

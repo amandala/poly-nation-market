@@ -1,0 +1,53 @@
+@import "../../../styles/variables";
+
+.Product {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.Title {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  color: $steel-grey;
+}
+
+.Price {
+  display: block;
+  font-size: 1.1rem;
+  color: $opium-pink;
+  margin-bottom: 0.7rem;
+}
+
+.Option {
+  display: block;
+  margin: 0.3rem auto 15px;
+  width: 50px;
+}
+
+.BuyButton {
+  background-color: $opium-pink;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.Details {
+  padding: 15px 20px;
+}
+
+@include medium {
+  .Product {
+    margin-bottom: 0;
+    justify-content: space-between;
+
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import VariantSelector from "./VariantSelector";
+import VariantSelector from "../VariantSelector";
+import styles from "./index.module.scss";
 
 class Product extends Component {
   constructor(props) {
@@ -58,7 +59,6 @@ class Product extends Component {
     });
 
     let variantSelectors = filteredOptions.map((option) => {
-      console.log(option.name);
       return (
         <VariantSelector
           handleOptionChange={this.handleOptionChange}
@@ -68,28 +68,31 @@ class Product extends Component {
       );
     });
     return (
-      <div className="Product">
+      <div className={styles.Product}>
         {this.props.product.images.length ? (
           <img
             src={variantImage.src}
             alt={`${this.props.product.title} product shot`}
           />
         ) : null}
-        <h5 className="Product__title">{this.props.product.title}</h5>
-        <p>{this.props.product.description}</p>
-        <span className="Product__price">${variant.price}</span>
-        {variantSelectors}
-        <label className="Product__option">
-          Quantity
-          <input
-            min="1"
-            type="number"
-            defaultValue={variantQuantity}
-            onChange={this.handleQuantityChange}
-          ></input>
-        </label>
+        <div className={styles.Details}>
+          <h5 className={styles.Title}>{this.props.product.title}</h5>
+          <p>{this.props.product.description}</p>
+          <span className={styles.Price}>${variant.price}</span>
+          {variantSelectors}
+          <label>
+            Quantity
+            <input
+              className={styles.Option}
+              min="1"
+              type="number"
+              defaultValue={variantQuantity}
+              onChange={this.handleQuantityChange}
+            ></input>
+          </label>
+        </div>
         <button
-          className="Product__buy button"
+          className={styles.BuyButton}
           onClick={() =>
             this.props.addVariantToCart(variant.id, variantQuantity)
           }

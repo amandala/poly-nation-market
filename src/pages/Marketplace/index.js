@@ -1,31 +1,43 @@
 import React from "react";
-import Products from "../components/shopify/Products";
-import Cart from "../components/shopify/Cart";
+import Products from "../../components/shopify/Products";
+import Cart from "../../components/shopify/Cart";
+import { useStateValue } from "../../StateProvider";
+import { H1, P } from "../../components/Typography";
+import styles from "./index.module.scss";
 
 const Marketplace = ({ client }) => {
-  const [isCartOpen, setIsCartOpen] = React.useState(false);
-  const [checkout, setCheckout] = React.useState({ lineItems: [] });
-  const [products, setProducts] = React.useState([]);
-  const [shop, setShop] = React.useState({});
+  const [{ isCartOpen, shop, checkout, products }, dispatch] = useStateValue();
 
   React.useEffect(() => {
     if (client) {
       client.checkout.create().then((res) => {
-        setCheckout(res);
+        dispatch({
+          type: "SET_CHECKOUT",
+          data: res,
+        });
       });
 
       client.product.fetchAll().then((res) => {
-        setProducts(res);
+        dispatch({
+          type: "SET_PRODUCTS",
+          data: res,
+        });
       });
 
       client.shop.fetchInfo().then((res) => {
-        setShop(res);
+        dispatch({
+          type: "SET_SHOP",
+          data: res,
+        });
       });
     }
-  }, [client]);
+  }, [client, dispatch]);
 
   const addVariantToCart = (variantId, quantity) => {
-    setIsCartOpen(true);
+    dispatch({
+      type: "SET_IS_CART_OPEN",
+      data: true,
+    });
 
     const lineItemsToAdd = [{ variantId, quantity: parseInt(quantity, 10) }];
     const checkoutId = checkout.id;
@@ -33,7 +45,10 @@ const Marketplace = ({ client }) => {
     return client.checkout
       .addLineItems(checkoutId, lineItemsToAdd)
       .then((res) => {
-        setCheckout(res);
+        dispatch({
+          type: "SET_CHECKOUT",
+          data: res,
+        });
       });
   };
 
@@ -46,7 +61,10 @@ const Marketplace = ({ client }) => {
     return client.checkout
       .updateLineItems(checkoutId, lineItemsToUpdate)
       .then((res) => {
-        setCheckout(res);
+        dispatch({
+          type: "SET_CHECKOUT",
+          data: res,
+        });
       });
   };
 
@@ -56,39 +74,35 @@ const Marketplace = ({ client }) => {
     return client.checkout
       .removeLineItems(checkoutId, [lineItemId])
       .then((res) => {
-        setCheckout(res);
+        dispatch({
+          type: "SET_CHECKOUT",
+          data: res,
+        });
       });
   };
 
   const handleCartClose = () => {
-    setIsCartOpen(false);
+    dispatch({
+      type: "SET_IS_CART_OPEN",
+      data: false,
+    });
   };
 
-  console.log(products);
-
   return (
-    <div className="App">
-      <header className="App__header">
-        {!isCartOpen && (
-          <div className="App__view-cart-wrapper">
-            <button
-              className="App__view-cart"
-              onClick={() => setIsCartOpen(true)}
-            >
-              Cart
-            </button>
-          </div>
-        )}
-        <div className="App__title">
-          <h1>{shop.name}</h1>
+    <div className={styles.Marketplace}>
+      <header className={styles.Header}>
+        <div className={styles.Title}>
+          <H1>{shop.name}</H1>
         </div>
       </header>
-      <h2>{shop.description}</h2>
-      <Products
-        products={products}
-        client={client}
-        addVariantToCart={addVariantToCart}
-      />
+      <div className={styles.Content}>
+        <P>{shop.description}</P>
+        <Products
+          products={products}
+          client={client}
+          addVariantToCart={addVariantToCart}
+        />
+      </div>
       <Cart
         checkout={checkout}
         isCartOpen={isCartOpen}

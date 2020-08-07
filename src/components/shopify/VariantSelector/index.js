@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from "./index.module.scss";
 
 class VariantSelector extends Component {
   render() {
@@ -6,7 +7,7 @@ class VariantSelector extends Component {
       <div>
         Select {this.props.option.name}
         <select
-          className="Product__option"
+          className={styles.Option}
           name={this.props.option.name}
           key={this.props.option.name}
           onChange={this.props.handleOptionChange}
