@@ -48,7 +48,7 @@ const Home = () => {
             src="/vibehive-logo.png"
             alt="Vibe Hive Logo"
           />
-          <H2 className={styles.HeadingTemp}>The vibe is alive and</H2>
+          <H2>The vibe is alive</H2>
           <H1 className={styles.HeadingTemp}>COMING SOON!</H1>
         </div>
         <footer className={styles.Footer}>
