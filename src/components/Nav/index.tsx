@@ -17,7 +17,7 @@ const Nav = () => {
             </Link>
           </li>
           <li className={styles.LinkWrapper}>
-            <Link className={styles.Link} to="/Marketplace">
+            <Link className={styles.Link} to="/market">
               Marketplace
             </Link>
           </li>

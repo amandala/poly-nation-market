@@ -1,33 +1,5 @@
 @import "../../styles/variables";
 
-.Page {
-  background-color: $steel-grey;
-}
-
-.PolyNation {
-  width: 800px;
-}
-
-.Wrapper {
-  width: 100%;
-  background-image: url("/bees.jpg");
-  min-height: 100vh;
-
-  margin: 0 auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 100px 20px 15px;
-}
-
-.Header {
-  text-align: center;
-}
-
 .Date {
   color: $steel-grey;
   font-weight: 400;
@@ -62,10 +34,4 @@
 
 .Vibe {
   margin-bottom: 24px;
-}
-
-@include medium {
-  .Wrapper {
-    padding: 100px 0 15px;
-  }
 }

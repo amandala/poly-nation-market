@@ -96,7 +96,7 @@ const Marketplace = ({ client }) => {
         </div>
       </header>
       <div className={styles.Content}>
-        <P>{shop.description}</P>
+        <P className={styles.ShopDescription}>{shop.description}</P>
         <Products
           products={products}
           client={client}

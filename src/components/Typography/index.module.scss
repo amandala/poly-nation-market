@@ -29,7 +29,8 @@
 .H1 {
   font-family: $RedRose;
   font-weight: 100;
-  font-size: 46px;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -59,4 +60,11 @@
   font-weight: 300;
   margin-bottom: 10px;
   font-size: 14px;
+}
+
+@include medium {
+  .H1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
 }

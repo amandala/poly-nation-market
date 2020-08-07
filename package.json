@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "@types/classnames": "^2.2.10",
     "@types/react-router-dom": "^5.1.5",
+    "@types/window-or-global": "^1.0.2",
     "classnames": "^2.2.6",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -15,7 +16,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "shopify-buy": "^2.11.0",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "window-or-global": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.Left {
+  padding: 20px;
+  background-color: rgba(34, 29, 52, 0.7);
+}
+
+@include medium {
+  .Left {
+    max-width: 50%;
+  }
+}

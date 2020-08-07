@@ -25,7 +25,7 @@ export const H5 = ({ children, className }: TypographyType) => (
   <h5 className={cx(styles.H5, className)}>{children}</h5>
 );
 export const P = ({ children, small, className }: TypographyType) => (
-  <p className={cx(styles.P, { [styles.PSmall]: small, className })}>
+  <p className={cx(styles.P, className, { [styles.PSmall]: small })}>
     {children}
   </p>
 );
