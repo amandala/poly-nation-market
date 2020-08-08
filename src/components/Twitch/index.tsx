@@ -117,7 +117,7 @@ TwitchEmbedVideo.defaultProps = {
   height: "600px",
   autoplay: true,
   muted: false,
-  parent: ["polynation.ca"],
+  parent: ["polynation.ca", "poly-nation-staging.herokuapp.com", "localhost"],
 };
 
 export default React.memo(TwitchEmbedVideo);
