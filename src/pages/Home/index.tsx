@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       <div className={styles.TwitchWrapper}>
         {/*@ts-ignore */}
-        <Twitch channel="cohhcarnage" targetClass={styles.TwtichEmbed} />
+        <Twitch channel="a_mandala_" targetClass={styles.TwtichEmbed} />
       </div>
       <footer className={styles.Footer}>
         <a
