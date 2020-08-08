@@ -19,7 +19,13 @@ const Home = () => {
       </div>
       <div className={styles.TwitchWrapper}>
         {/*@ts-ignore */}
-        <Twitch channel="a_mandala_" targetClass={styles.TwtichEmbed} />
+        <iframe
+          className={styles.Twitch}
+          title="twitch-embed"
+          src="https://player.twitch.tv/?channel=a_mandala_&parent=localhost"
+          height="720"
+          width="100%"
+        ></iframe>
       </div>
       <footer className={styles.Footer}>
         <a
