@@ -19,14 +19,7 @@ const Home = () => {
       </div>
       <div className={styles.TwitchWrapper}>
         {/*@ts-ignore */}
-        <iframe
-          title="Twitch"
-          src="https://player.twitch.tv?channel=dusk2dawnproductions&parent=poly-nation-staging.herokuapp.com"
-          height="600"
-          width="400"
-          allowFullScreen={true}
-          //@ts-ignore
-        ></iframe>
+        <Twitch channel="cohhcarnage" targetClass={styles.TwtichEmbed} />
       </div>
       <footer className={styles.Footer}>
         <a
