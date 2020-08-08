@@ -21,7 +21,7 @@ const Home = () => {
         {/*@ts-ignore */}
         <iframe
           title="Twitch"
-          src="https://player.twitch.tv?channel=dusk2dawnproductions&parent=localhost"
+          src="https://player.twitch.tv?channel=dusk2dawnproductions&parent=poly-nation-staging.herokuapp.com"
           height="600"
           width="400"
           allowFullScreen={true}
