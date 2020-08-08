@@ -22,7 +22,7 @@ const Home = () => {
         <iframe
           className={styles.Twitch}
           title="twitch-embed"
-          src="https://player.twitch.tv/?channel=a_mandala_&parent=poly-nation-staging.herokuapp.com"
+          src={`https://player.twitch.tv/?channel=a_mandala_&parent=${process.env.REACT_APP_URL}`}
           height="720"
           width="100%"
         ></iframe>
