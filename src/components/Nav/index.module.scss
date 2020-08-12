@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.Bee {
+  width: 20px;
+}
+
 .NavLinks {
   margin: 0 auto;
   max-width: 900px;
@@ -24,7 +28,7 @@
 }
 
 .LinkWrapper {
-  margin-right: 15px;
+  margin-right: 20px;
 
   &:last-child {
     margin-right: 0;
@@ -32,7 +36,7 @@
 }
 
 .Link {
-  color: $ziggurat-blue;
+  color: $white;
   font-size: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -42,7 +46,7 @@
   margin: 0;
 
   &:hover {
-    color: $bermuda-grey;
+    color: $ziggurat-blue;
   }
 }
 

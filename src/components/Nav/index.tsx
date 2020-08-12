@@ -56,12 +56,12 @@ const Nav = ({ client }) => {
         <ul className={styles.Links}>
           <li className={styles.LinkWrapper}>
             <Link className={styles.Link} to="/">
-              Home
+              <img src="/poly-bee.png" alt="Poly Bee" className={styles.Bee} />
             </Link>
           </li>
           <li className={styles.LinkWrapper}>
             <Link className={styles.Link} to="/market">
-              Marketplace
+              Market
             </Link>
           </li>
         </ul>
