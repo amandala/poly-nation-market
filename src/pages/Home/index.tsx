@@ -40,10 +40,10 @@ const Home = () => {
           </div>
           <P className={styles.Welcome}>
             Welcome to Poly Nation, a VibeHive Prodution in collaboration with
-            Wolf Pack Creative. We're bringing you an art and music livestream
-            party Featuring a graffiti mural jam, and DJs and bands from
-            Calgary, AB Canada, and remote stream feature takeovers from the UK
-            every 2 hours.
+            Big Kitty Crew. We're bringing you an art and music livestream party
+            Featuring a graffiti mural jam, and DJs and bands from Calgary, AB
+            Canada, and remote stream feature takeovers from the UK every 2
+            hours.
           </P>
         </div>
       </Section>
