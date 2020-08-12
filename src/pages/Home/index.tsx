@@ -42,7 +42,7 @@ const Home = () => {
               a VibeHive Prodution in collaboration with Big Kitty Crew. We're
               bringing you an art and music livestream party featuring DJs and
               bands from Calgary, AB Canada, with remote crew feature takeovers
-              from the UK every 2 hours, and a graffiti mural jam.
+              from the UK every 2 hours, and a live graffiti mural jam.
             </P>
           </div>
         </div>
