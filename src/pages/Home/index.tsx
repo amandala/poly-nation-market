@@ -1,15 +1,14 @@
 import React from "react";
 import BeePage from "../../components/BeePage";
 import Section from "../../components/Section";
-import { P, H3, H4 } from "../../components/Typography";
-
+import { P, H1, H3, H4 } from "../../components/Typography";
+import Footer from "../../components/Footer";
 import styles from "./index.module.scss";
 
 const Home = () => {
   return (
     <BeePage>
       <Section className={styles.Header}>
-        <div className={styles.LogoWrapper}></div>
         <div className={styles.Definitions}>
           <H4 className={styles.Date}>August 22 & 23</H4>
           <img
@@ -17,7 +16,6 @@ const Home = () => {
             alt="Poly Nation Logo"
             className={styles.Logo}
           />
-
           <div className={styles.Definition}>
             <div className={styles.Word}>
               <H3>poly-</H3>
@@ -38,12 +36,15 @@ const Home = () => {
               or language, inhabiting a particular country or territory.
             </P>
           </div>
-          <P className={styles.Welcome}>
-            Welcome to Poly Nation, a VibeHive Prodution in collaboration with
-            Big Kitty Crew. We're bringing you an art and music livestream party
-            featuring a graffiti mural jam, DJs and bands from Calgary, AB
-            Canada, and remote crew feature takeovers from the UK every 2 hours.
-          </P>
+          <div className={styles.Welcome}>
+            <H1>Welcome to Poly Nation</H1>
+            <P>
+              a VibeHive Prodution in collaboration with Big Kitty Crew. We're
+              bringing you an art and music livestream party featuring a
+              graffiti mural jam, DJs and bands from Calgary, AB Canada, and
+              remote crew feature takeovers from the UK every 2 hours.
+            </P>
+          </div>
         </div>
       </Section>
       <div className={styles.TwitchWrapper}>
@@ -54,14 +55,7 @@ const Home = () => {
           src={`https://player.twitch.tv/?channel=a_mandala_&parent=${process.env.REACT_APP_URL}`}
         ></iframe>
       </div>
-      <footer className={styles.Footer}>
-        <a
-          className={styles.ExternalLink}
-          href="http://www.portad.ca"
-          target="_blank"
-          rel="noopener noreferrer"
-        >{`Site made with ♡ by Amanda Haynes`}</a>
-      </footer>
+      <Footer />
     </BeePage>
   );
 };

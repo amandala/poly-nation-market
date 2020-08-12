@@ -7,20 +7,8 @@
   margin-bottom: 24px;
 }
 
-.ExternalLink {
-  color: $white;
-  text-decoration: none;
-  font-family: $Montserrat;
-  font-weight: 100;
-
-  &:hover,
-  &:visited {
-    color: $ziggurat-blue;
-  }
-}
-
 .Header {
-  margin-bottom: 24px;
+  margin-bottom: 45px;
   padding: 0 20px;
 }
 
@@ -67,6 +55,10 @@
 @include medium {
   .Twitch {
     height: 800px;
+
+    &Wrapper {
+      width: 100%;
+    }
   }
 
   .Header {

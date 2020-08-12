@@ -11,7 +11,7 @@ const App = ({ client }) => {
   return (
     <StateProvider>
       <Router>
-        <div>
+        <div style={{ minHeight: "100vh" }}>
           <Nav client={client} />
           <Switch>
             <Route path="/market">

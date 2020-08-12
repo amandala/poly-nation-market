@@ -4,6 +4,7 @@ import { useStateValue } from "../../StateProvider";
 import { H1, P } from "../../components/Typography";
 import styles from "./index.module.scss";
 import BeePage from "../../components/BeePage";
+import Footer from "../../components/Footer";
 
 const Marketplace = ({ client }) => {
   const [{ shop, checkout, products }, dispatch] = useStateValue();
@@ -61,7 +62,7 @@ const Marketplace = ({ client }) => {
   }
 
   return (
-    <div>
+    <div className={styles.Market}>
       <header className={styles.Header}>
         <div className={styles.Title}>
           <H1>{shop.name}</H1>
@@ -74,6 +75,9 @@ const Marketplace = ({ client }) => {
           client={client}
           addVariantToCart={addVariantToCart}
         />
+      </div>
+      <div className={styles.Footer}>
+        <Footer />
       </div>
     </div>
   );
