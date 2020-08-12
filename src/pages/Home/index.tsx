@@ -40,9 +40,9 @@ const Home = () => {
             <H1>Welcome to Poly Nation</H1>
             <P>
               a VibeHive Prodution in collaboration with Big Kitty Crew. We're
-              bringing you an art and music livestream party featuring a
-              graffiti mural jam, DJs and bands from Calgary, AB Canada, and
-              remote crew feature takeovers from the UK every 2 hours.
+              bringing you an art and music livestream party featuring DJs and
+              bands from Calgary, AB Canada, with remote crew feature takeovers
+              from the UK every 2 hours, and a graffiti mural jam.
             </P>
           </div>
         </div>
