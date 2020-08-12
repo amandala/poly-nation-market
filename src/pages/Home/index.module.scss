@@ -1,5 +1,12 @@
 @import "../../styles/variables";
 
+.Logo {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
 .Date {
   color: $steel-grey;
   font-weight: 400;
@@ -18,6 +25,11 @@
   }
 }
 
+.Header {
+  margin-bottom: 24px;
+  padding: 0 20px;
+}
+
 .TwitchWrapper {
   width: 100%;
   min-height: 600px;
@@ -25,16 +37,9 @@
 
 .Twitch {
   border: 0;
-}
-
-.MainWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: rgba(34, 29, 52, 0.7);
-  padding: 20px;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 .HeadingTemp {
@@ -43,4 +48,42 @@
 
 .Vibe {
   margin-bottom: 24px;
+}
+
+.Definitions {
+  border-radius: 50px;
+  padding: 40px;
+  background-color: rgba(34, 29, 52, 0.7);
+}
+
+.Definition {
+  color: white;
+}
+
+@include medium {
+  .Twitch {
+    height: 800px;
+  }
+
+  .Header {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Logo {
+    max-width: 400px;
+  }
+
+  .Definition {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .Word {
+    margin-right: 24px;
+    min-width: 100px;
+  }
 }

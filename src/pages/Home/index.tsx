@@ -1,30 +1,49 @@
 import React from "react";
-import Twitch from "../../components/Twitch";
 import BeePage from "../../components/BeePage";
-import { H1, H2 } from "../../components/Typography";
+import Section from "../../components/Section";
+import { P, H4, H3 } from "../../components/Typography";
 
 import styles from "./index.module.scss";
 
 const Home = () => {
   return (
     <BeePage>
-      <div className={styles.MainWrapper}>
-        <img
-          className={styles.Vibe}
-          src="/vibehive-logo.png"
-          alt="Vibe Hive Logo"
-        />
-        <H2>The vibe is alive</H2>
-        <H1 className={styles.HeadingTemp}>COMING SOON!</H1>
-      </div>
+      <Section className={styles.Header}>
+        <div className={styles.LogoWrapper}></div>
+        <div className={styles.Definitions}>
+          <img
+            src="/wordmark.png"
+            alt="Poly Nation Logo"
+            className={styles.Logo}
+          />
+          <div className={styles.Definition}>
+            <div className={styles.Word}>
+              <H3>poly-</H3>
+              <H4>/ˈpälē/</H4>
+            </div>
+            <P>
+              a combining form with the meanings “much, many” used in the
+              formation of compound words: polyculture; polyhedron.
+            </P>
+          </div>
+          <div className={styles.Definition}>
+            <div className={styles.Word}>
+              <H3>nation</H3>
+              <H4>/ˈnāSH(ə)n/</H4>
+            </div>
+            <P>
+              a large body of people united by common descent, history, culture,
+              or language, inhabiting a particular country or territory.
+            </P>
+          </div>
+        </div>
+      </Section>
       <div className={styles.TwitchWrapper}>
         {/*@ts-ignore */}
         <iframe
           className={styles.Twitch}
           title="twitch-embed"
           src={`https://player.twitch.tv/?channel=a_mandala_&parent=${process.env.REACT_APP_URL}`}
-          height="720"
-          width="100%"
         ></iframe>
       </div>
       <footer className={styles.Footer}>

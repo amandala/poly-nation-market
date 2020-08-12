@@ -12,7 +12,7 @@ const App = ({ client }) => {
     <StateProvider>
       <Router>
         <div>
-          <Nav />
+          <Nav client={client} />
           <Switch>
             <Route path="/market">
               <Marketplace client={client} />

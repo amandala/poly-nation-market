@@ -1,11 +1,54 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
+import Cart from "../shopify/Cart";
 
 import styles from "./index.module.scss";
+//@ts-ignore
+const Nav = ({ client }) => {
+  const [{ isCartOpen, shop, checkout }, dispatch] = useStateValue();
 
-const Nav = () => {
-  const [{ isCartOpen, shop }, dispatch] = useStateValue();
+  const updateQuantityInCart = (lineItemId: string, quantity: string) => {
+    const checkoutId = checkout.id;
+    const lineItemsToUpdate = [
+      { id: lineItemId, quantity: parseInt(quantity, 10) },
+    ];
+
+    return (
+      client.checkout
+        .updateLineItems(checkoutId, lineItemsToUpdate)
+        //@ts-ignore
+        .then((res) => {
+          dispatch({
+            type: "SET_CHECKOUT",
+            data: res,
+          });
+        })
+    );
+  };
+
+  const removeLineItemInCart = (lineItemId: string) => {
+    const checkoutId = checkout.id;
+
+    return (
+      client.checkout
+        .removeLineItems(checkoutId, [lineItemId])
+        //@ts-ignore
+        .then((res) => {
+          dispatch({
+            type: "SET_CHECKOUT",
+            data: res,
+          });
+        })
+    );
+  };
+
+  const handleCartClose = () => {
+    dispatch({
+      type: "SET_IS_CART_OPEN",
+      data: false,
+    });
+  };
 
   return (
     <nav className={styles.Nav}>
@@ -38,6 +81,13 @@ const Nav = () => {
           </span>
         )}
       </div>
+      <Cart
+        checkout={checkout}
+        isCartOpen={isCartOpen}
+        handleCartClose={handleCartClose}
+        updateQuantityInCart={updateQuantityInCart}
+        removeLineItemInCart={removeLineItemInCart}
+      />
     </nav>
   );
 };

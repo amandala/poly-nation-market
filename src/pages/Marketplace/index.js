@@ -1,12 +1,12 @@
 import React from "react";
 import Products from "../../components/shopify/Products";
-import Cart from "../../components/shopify/Cart";
 import { useStateValue } from "../../StateProvider";
 import { H1, P } from "../../components/Typography";
 import styles from "./index.module.scss";
+import BeePage from "../../components/BeePage";
 
 const Marketplace = ({ client }) => {
-  const [{ isCartOpen, shop, checkout, products }, dispatch] = useStateValue();
+  const [{ shop, checkout, products }, dispatch] = useStateValue();
 
   React.useEffect(() => {
     if (client) {
@@ -52,44 +52,16 @@ const Marketplace = ({ client }) => {
       });
   };
 
-  const updateQuantityInCart = (lineItemId, quantity) => {
-    const checkoutId = checkout.id;
-    const lineItemsToUpdate = [
-      { id: lineItemId, quantity: parseInt(quantity, 10) },
-    ];
-
-    return client.checkout
-      .updateLineItems(checkoutId, lineItemsToUpdate)
-      .then((res) => {
-        dispatch({
-          type: "SET_CHECKOUT",
-          data: res,
-        });
-      });
-  };
-
-  const removeLineItemInCart = (lineItemId) => {
-    const checkoutId = checkout.id;
-
-    return client.checkout
-      .removeLineItems(checkoutId, [lineItemId])
-      .then((res) => {
-        dispatch({
-          type: "SET_CHECKOUT",
-          data: res,
-        });
-      });
-  };
-
-  const handleCartClose = () => {
-    dispatch({
-      type: "SET_IS_CART_OPEN",
-      data: false,
-    });
-  };
+  if (!client) {
+    return (
+      <BeePage>
+        <H1>Sorry, we're closed</H1>
+      </BeePage>
+    );
+  }
 
   return (
-    <div className={styles.Marketplace}>
+    <div>
       <header className={styles.Header}>
         <div className={styles.Title}>
           <H1>{shop.name}</H1>
@@ -103,13 +75,6 @@ const Marketplace = ({ client }) => {
           addVariantToCart={addVariantToCart}
         />
       </div>
-      <Cart
-        checkout={checkout}
-        isCartOpen={isCartOpen}
-        handleCartClose={handleCartClose}
-        updateQuantityInCart={updateQuantityInCart}
-        removeLineItemInCart={removeLineItemInCart}
-      />
     </div>
   );
 };
