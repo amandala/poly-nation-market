@@ -1,7 +1,7 @@
 import React from "react";
 import BeePage from "../../components/BeePage";
 import Section from "../../components/Section";
-import { P, H4, H3 } from "../../components/Typography";
+import { P, H3, H4 } from "../../components/Typography";
 
 import styles from "./index.module.scss";
 
@@ -11,11 +11,13 @@ const Home = () => {
       <Section className={styles.Header}>
         <div className={styles.LogoWrapper}></div>
         <div className={styles.Definitions}>
+          <H4 className={styles.Date}>August 22 & 23</H4>
           <img
             src="/wordmark.png"
             alt="Poly Nation Logo"
             className={styles.Logo}
           />
+
           <div className={styles.Definition}>
             <div className={styles.Word}>
               <H3>poly-</H3>
@@ -36,6 +38,13 @@ const Home = () => {
               or language, inhabiting a particular country or territory.
             </P>
           </div>
+          <P className={styles.Welcome}>
+            Welcome to Poly Nation, a VibeHive Prodution in collaboration with
+            Wolf Pack Creative. We're bringing you an art and music livestream
+            party Featuring a graffiti mural jam, and DJs and bands from
+            Calgary, AB Canada, and remote stream feature takeovers from the UK
+            every 2 hours.
+          </P>
         </div>
       </Section>
       <div className={styles.TwitchWrapper}>
