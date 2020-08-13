@@ -10,7 +10,7 @@ const Home = () => {
     <BeePage>
       <Section className={styles.Header}>
         <div className={styles.Definitions}>
-          <H4 className={styles.Date}>August 22 & 23</H4>
+          <H3 className={styles.Date}>August 22 & 23</H3>
           <img
             src="/wordmark.png"
             alt="Poly Nation Logo"
@@ -39,10 +39,11 @@ const Home = () => {
           <div className={styles.Welcome}>
             <H1>Welcome to Poly Nation</H1>
             <P>
-              a VibeHive Prodution in collaboration with Big Kitty Crew. We're
-              bringing you an art and music livestream party featuring DJs and
-              bands from Calgary, AB Canada, with remote crew feature takeovers
-              from the UK every 2 hours, and a live graffiti mural jam.
+              A VibeHive Produtions event in collaboration with the Big Kitty
+              Crew. We're bringing you an art and music livestream party
+              featuring DJs and bands from Calgary, AB Canada, with remote crew
+              feature takeovers from the UK every 2 hours, and a live graffiti
+              mural jam.
             </P>
           </div>
         </div>
