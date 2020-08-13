@@ -37,6 +37,8 @@ class Product extends Component {
       selectedOptions
     );
 
+    console.log(event);
+
     this.setState({
       selectedVariant: selectedVariant,
       selectedVariantImage: selectedVariant.attrs.image,
