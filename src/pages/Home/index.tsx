@@ -52,7 +52,7 @@ const Home = () => {
         <iframe
           className={styles.Twitch}
           title="twitch-embed"
-          src={`https://player.twitch.tv/?channel=a_mandala_&parent=${process.env.REACT_APP_URL}`}
+          src={`https://player.twitch.tv/?channel=vibehiveproductions&parent=${process.env.REACT_APP_URL}`}
         ></iframe>
       </div>
       <Footer />

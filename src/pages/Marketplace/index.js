@@ -76,9 +76,6 @@ const Marketplace = ({ client }) => {
           addVariantToCart={addVariantToCart}
         />
       </div>
-      <div className={styles.Footer}>
-        <Footer />
-      </div>
     </div>
   );
 };
