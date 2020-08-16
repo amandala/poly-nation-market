@@ -12,32 +12,12 @@ const Home = () => {
         <div className={styles.Definitions}>
           <H3 className={styles.Date}>August 22 & 23</H3>
           <img
-            src="/wordmark.png"
-            alt="Poly Nation Logo"
+            src="/pollination-logo.png"
+            alt="Pollination Livestream Logo"
             className={styles.Logo}
           />
-          <div className={styles.Definition}>
-            <div className={styles.Word}>
-              <H3>poly-</H3>
-              <H4>/ˈpälē/</H4>
-            </div>
-            <P>
-              a combining form with the meanings “much, many” used in the
-              formation of compound words: polyculture; polyhedron.
-            </P>
-          </div>
-          <div className={styles.Definition}>
-            <div className={styles.Word}>
-              <H3>nation</H3>
-              <H4>/ˈnāSH(ə)n/</H4>
-            </div>
-            <P>
-              a large body of people united by common descent, history, culture,
-              or language, inhabiting a particular country or territory.
-            </P>
-          </div>
           <div className={styles.Welcome}>
-            <H1>Welcome to Poly Nation</H1>
+            <H1>Welcome to Pollination Livestream</H1>
             <P>
               A VibeHive Produtions event in collaboration with the Big Kitty
               Crew. We're bringing you an art and music livestream party
