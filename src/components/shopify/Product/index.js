@@ -69,10 +69,13 @@ class Product extends Component {
         />
       );
     });
+
+    console.log(variant);
     return (
       <div className={styles.Product}>
         {this.props.product.images.length ? (
           <img
+            className={styles.Image}
             src={variantImage.src}
             alt={`${this.props.product.title} product shot`}
           />

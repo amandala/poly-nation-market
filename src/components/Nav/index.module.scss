@@ -54,7 +54,9 @@
   .Links {
     justify-content: flex-start;
   }
+}
 
+@include large {
   .NavLinks {
     padding: 0;
   }

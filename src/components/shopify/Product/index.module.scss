@@ -9,6 +9,11 @@
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.Image {
+  max-height: 200px;
+  margin: 0 auto;
+}
+
 .Title {
   font-size: 1.3rem;
   margin-top: 1rem;
