@@ -69,13 +69,16 @@ const Marketplace = ({ client }) => {
         </div>
       </header>
       <div className={styles.Content}>
-        <P className={styles.ShopDescription}>{shop.description}</P>
-        <Products
-          products={products}
-          client={client}
-          addVariantToCart={addVariantToCart}
-        />
+        <div className={styles.Products}>
+          <P className={styles.ShopDescription}>{shop.description}</P>
+          <Products
+            products={products}
+            client={client}
+            addVariantToCart={addVariantToCart}
+          />
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

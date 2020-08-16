@@ -1,9 +1,12 @@
 @import "../../styles/variables";
 
-.Header {
-  background-color: #222;
+.Market {
+  background-color: $steel-grey;
   background-image: url("/bees.jpg");
   background-size: cover;
+}
+
+.Header {
   color: white;
 }
 
@@ -12,12 +15,17 @@
   text-align: center;
 }
 
-.Content {
+.Products {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
   padding: 0 20px;
   margin-bottom: 45px;
+}
+
+.Content {
+  padding: 24px 20px;
+  background-color: white;
 }
 
 .ShopDescription {
@@ -26,6 +34,6 @@
 
 @include large {
   .Content {
-    padding: 0;
+    padding: 24px 0;
   }
 }
