@@ -16,6 +16,7 @@
     "react-https-redirect": "^1.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-twitch-embed-video": "^2.0.4",
     "shopify-buy": "^2.11.0",
     "typescript": "^3.9.7",
     "window-or-global": "^1.0.1"

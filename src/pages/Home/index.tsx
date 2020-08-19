@@ -4,6 +4,7 @@ import Section from "../../components/Section";
 import { P, H1, H3, H4 } from "../../components/Typography";
 import Footer from "../../components/Footer";
 import styles from "./index.module.scss";
+import TwitchChannel from "../../components/TwitchChannel";
 
 const Home = () => {
   return (
@@ -42,12 +43,13 @@ const Home = () => {
         </div>
       </Section>
       <div className={styles.TwitchWrapper}>
+        <TwitchChannel channel="vibehiveproductions" />
         {/*@ts-ignore */}
-        <iframe
+        {/* <iframe
           className={styles.Twitch}
           title="twitch-embed"
           src={`https://player.twitch.tv/?channel=vibehiveproductions&parent=${process.env.REACT_APP_URL}`}
-        ></iframe>
+        ></iframe> */}
       </div>
       <Footer />
     </BeePage>
