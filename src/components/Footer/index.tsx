@@ -9,7 +9,7 @@ const Footer = () => (
       href="http://www.portad.ca"
       target="_blank"
       rel="noopener noreferrer"
-    >{`Site made with ♡ by Amanda`}</a>
+    >{`Site made with ♡ by Port:AD`}</a>
   </footer>
 );
 
