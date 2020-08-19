@@ -99,9 +99,9 @@ const LiveArt = () => {
                     There are plenty of opportunities to delight the business
                     owners with little shouts in your piece or themed
                     characters. Specifically we want to thank Bowness Arts, The
-                    Place Restaurant, Bowness Community Association, and Carstar
-                    Bowness. Come chat with me and let's figure out a way to say
-                    thanks for the specific wall you're painting 🤗
+                    Place Restaurant, and The Bowness Community Association.
+                    Come chat with me and let's figure out a way to say thanks
+                    for the specific wall you're painting 🤗
                   </P>
                 </li>
 
