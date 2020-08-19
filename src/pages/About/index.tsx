@@ -14,7 +14,7 @@ const About = () => {
             <H1 className={styles.Buzz}>What's all the buzz about?</H1>
             <P>
               We've been busy bees curating a weekend of live art and music.
-              Blending multiple communities, we bring you a cross pollination of
+              Blending various communities, we bring you a cross pollination of
               creative minds spanning multiple continents.
             </P>
             <P>
