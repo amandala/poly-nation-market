@@ -118,7 +118,7 @@ const LiveArt = () => {
                   hand out the paint at 10am on Saturday first come, first
                   served styles. If you're on a wall with Hebrw, Toner, or Ashk,
                   chat with them about scheme so we can try to proddy the larger
-                  walls. 🎨
+                  walls 🎨
                 </P>
               </li>
             </ol>
