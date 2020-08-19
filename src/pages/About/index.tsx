@@ -44,7 +44,9 @@ const About = () => {
               </span>
             </P>
           </div>
-          <H2>We are eternally grateful to our generous partners!</H2>
+          <H2 className={styles.Buzz}>
+            We are eternally grateful to our partners!
+          </H2>
           <div>
             <H3>Bowness Arts</H3>
             <P>

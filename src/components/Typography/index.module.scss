@@ -13,8 +13,8 @@
 .P {
   font-family: $OpenSans;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   margin-bottom: 24px;
   color: white;
   margin-top: 0;
@@ -69,5 +69,10 @@
   .H1 {
     font-size: 4.5rem;
     line-height: 4.5rem;
+  }
+
+  .P {
+    font-size: 22px;
+    line-height: 24px;
   }
 }
