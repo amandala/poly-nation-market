@@ -20,7 +20,7 @@ const LiveArt = () => {
             <H1 className={styles.Buzz}>Graffiti Jam Info Hub</H1>
           </div>
           <div>
-            <P>Hello, tallented friends!</P>
+            <P>Hello, talented friends!</P>
             <P>
               It's time for another graffiti jam hosted by Lone 😽 I've teamed
               up with the crew at Vibe Hive Productions for tunes, and we've got
