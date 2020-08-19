@@ -77,6 +77,14 @@ const LiveArt = () => {
               <ol className={styles.List}>
                 <li className={styles.ListItem}>
                   <P>
+                    I've set up an online marketplace powered by Shopify on this
+                    event website. We will also have a pop-up market on site.
+                    All sales are non-commission, so if you have art or goods
+                    for sale, let's get them up on the market!
+                  </P>
+                </li>
+                <li className={styles.ListItem}>
+                  <P>
                     This is a public, outdoor event so obviously no blatant use
                     of drugs or alcohol. We've got an after party planned for
                     Saturday night at the Meta Space downtown for you to let
