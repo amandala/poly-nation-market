@@ -32,12 +32,16 @@ const About = () => {
               curated a talented group of individuals to bring some beauty and
               color to a lucky block on Bowness Road. Come down and watch as 24
               talented visual artists decorate 5 giant walls with graffiti and
-              street art.
+              street art. We've organized a small pop-up market with local
+              artisan goods, and food trucks to keep you refreshed while you're
+              here.
             </P>
             <P>
-              Not in Calgary? No worries, you can still join in on the fun.
-              We'll be livestreaming all the action on the homepage for the
-              global hive. The party starts at noon on Saturday August 22.
+              Not in Calgary? No worries, you can still join in on the fun.{" "}
+              <span className={styles.Bold}>
+                We'll be livestreaming all the action on the homepage for the
+                global hive. The party starts at noon on Saturday August 22.
+              </span>
             </P>
           </div>
           <H2>We are eternally grateful to our generous partners!</H2>
