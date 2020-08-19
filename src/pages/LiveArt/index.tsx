@@ -111,6 +111,16 @@ const LiveArt = () => {
                   them you're with me 🤙
                 </P>
               </li>
+              <li className={styles.ListItem}>
+                <P>
+                  I've got 10 cans of paint for each artist. I cleared out
+                  Beast's garage and got a mixed bag of Loop and Montana. I'll
+                  hand out the paint at 10am on Saturday first come, first
+                  served styles. If you're on a wall with Hebrw, Toner, or Ashk,
+                  chat with them about scheme so we can try to proddy the larger
+                  walls. 🎨
+                </P>
+              </li>
             </ol>
             <P>
               Stoked you can make it. Please HMU if you have any questions at
