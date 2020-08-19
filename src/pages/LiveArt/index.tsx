@@ -33,95 +33,114 @@ const LiveArt = () => {
               src="/excellent.gif"
               alt="We Love Bowness Logo"
             />
-            <H2>Timeline</H2>
-            <div className={styles.TimelineEvent}>
-              <P>SAT August 22 10am - 8pm </P>
-              <P className={cx(styles.Bold, styles.Event)}> GRAFF JAM</P>
-            </div>
-            <div className={styles.TimelineEvent}>
-              <P>SAT August 22 10pm - 3am</P>
-              <P className={cx(styles.Bold, styles.Event)}>
-                {" "}
-                POLLINATION AFTER PARTY
+            <div className={styles.Section}>
+              <H2>Location</H2>
+              <P>
+                The stage and street side wall are located at 6324 Bowness Road
+                NW. Come find my colorful camper in the allwy way when you get
+                here!
               </P>
+              <iframe
+                title="location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1877.3658508050437!2d-113.98996042320262!3d51.05507494696671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717b2a20c2df9f%3A0x9013fa5e79ed8f!2sThe%20Calgary%20Central%20Sportsplex!5e0!3m2!1sen!2sca!4v1594967843408!5m2!1sen!2sca"
+                width="600"
+                height="450"
+                aria-hidden="false"
+              ></iframe>
             </div>
-            <div className={styles.TimelineEvent}>
-              <P>SUN August 23 10am -8pm </P>
-              <P className={cx(styles.Bold, styles.Event)}> GRAFF JAM</P>
+            <div className={styles.Section}>
+              <H2>Timeline</H2>
+              <div className={styles.TimelineEvent}>
+                <P>SAT August 22 10am - 8pm </P>
+                <P className={cx(styles.Bold, styles.Event)}> GRAFF JAM</P>
+              </div>
+              <div className={styles.TimelineEvent}>
+                <P>SAT August 22 10pm - 3am</P>
+                <P className={cx(styles.Bold, styles.Event)}>
+                  {" "}
+                  POLLINATION AFTER PARTY
+                </P>
+              </div>
+              <div className={styles.TimelineEvent}>
+                <P>SUN August 23 10am -8pm </P>
+                <P className={cx(styles.Bold, styles.Event)}> GRAFF JAM</P>
+              </div>
             </div>
-            <H2>There's just a few important notes</H2>
-            <ol className={styles.List}>
-              <li className={styles.ListItem}>
-                <P>
-                  This is a public, outdoor event so obviously no blatant use of
-                  drugs or alcohol. We've got an after party planned for
-                  Saturday night at the Meta Space downtown for you to let
-                  loose. Just don't let too loose, it's gonne be hot af on
-                  Sunday 🥵
-                </P>
-              </li>
-              <li className={styles.ListItem}>
-                <P>
-                  We are painting various buildings on one block Bowness Road.
-                  The space has been donated to us by the busninesses, but there
-                  is mixed enthusiasm from the community. We need to be very
-                  intentional about creating a welcoming legal regulated exhibit
-                  for the entire community to enjoy, so it doesn't get buffed
-                  over right away.{" "}
-                  <span className={styles.Bold}>
-                    So, the art absolutely can not contain any gang
-                    affiliations, swears words, derogatory terms, political
-                    sentiments, crew beef, or images or phrases that could be
-                    considered offensive to anyone ⚠️
-                  </span>
-                </P>
-              </li>
-              <li className={styles.ListItem}>
-                <P>
-                  There are plenty of opportunities to delight the business
-                  owners with little shouts in your piece or themed characters.
-                  Specifically we want to thank Bowness Arts, The Place
-                  Restaurant, Bowness Community Association, and Carstar
-                  Bowness. Come chat with me and let's figure out a way to say
-                  thanks for the specific wall you're painting 🤗
-                </P>
-              </li>
+            <div className={styles.Section}>
+              <H2>There's just a few important notes</H2>
+              <ol className={styles.List}>
+                <li className={styles.ListItem}>
+                  <P>
+                    This is a public, outdoor event so obviously no blatant use
+                    of drugs or alcohol. We've got an after party planned for
+                    Saturday night at the Meta Space downtown for you to let
+                    loose. Just don't let too loose, it's gonne be hot af on
+                    Sunday 🥵
+                  </P>
+                </li>
+                <li className={styles.ListItem}>
+                  <P>
+                    We are painting various buildings on one block Bowness Road.
+                    The space has been donated to us by the busninesses, but
+                    there is mixed enthusiasm from the community. We need to be
+                    very intentional about creating a welcoming legal regulated
+                    exhibit for the entire community to enjoy, so it doesn't get
+                    buffed over right away.{" "}
+                    <span className={styles.Bold}>
+                      So, the art absolutely can not contain any gang
+                      affiliations, swears words, derogatory terms, political
+                      sentiments, crew beef, or images or phrases that could be
+                      considered offensive to anyone ⚠️
+                    </span>
+                  </P>
+                </li>
+                <li className={styles.ListItem}>
+                  <P>
+                    There are plenty of opportunities to delight the business
+                    owners with little shouts in your piece or themed
+                    characters. Specifically we want to thank Bowness Arts, The
+                    Place Restaurant, Bowness Community Association, and Carstar
+                    Bowness. Come chat with me and let's figure out a way to say
+                    thanks for the specific wall you're painting 🤗
+                  </P>
+                </li>
 
-              <li className={styles.ListItem}>
-                <P>
-                  We will be livestreaming the event via Twitch embedded on this
-                  website,{" "}
-                  <span className={styles.Bold}>
-                    so any considerations you might need to take to protect your
-                    identity are your responsibility 👻
-                  </span>
-                </P>
-              </li>
-              <li className={styles.ListItem}>
-                <P>
-                  There is some concern around replicating trademarked or
-                  copywrited images so we have been asked to refrain from
-                  painting any well known characters 💔
-                </P>
-              </li>
-              <li className={styles.ListItem}>
-                <P>
-                  We get a discount on goods at Bow Cannabis over the course of
-                  the weekend. Go support the local weed shop, man. Just tell
-                  them you're with me 🤙
-                </P>
-              </li>
-              <li className={styles.ListItem}>
-                <P>
-                  I've got 10 cans of paint for each artist. I cleared out
-                  Beast's garage and got a mixed bag of Loop and Montana. I'll
-                  hand out the paint at 10am on Saturday first come, first
-                  served styles. If you're on a wall with Hebrw, Toner, or Ashk,
-                  chat with them about scheme so we can try to proddy the larger
-                  walls 🎨
-                </P>
-              </li>
-            </ol>
+                <li className={styles.ListItem}>
+                  <P>
+                    We will be livestreaming the event via Twitch embedded on
+                    this website,{" "}
+                    <span className={styles.Bold}>
+                      so any considerations you might need to take to protect
+                      your identity are your responsibility 👻
+                    </span>
+                  </P>
+                </li>
+                <li className={styles.ListItem}>
+                  <P>
+                    There is some concern around replicating trademarked or
+                    copywrited images so we have been asked to refrain from
+                    painting any well known characters 💔
+                  </P>
+                </li>
+                <li className={styles.ListItem}>
+                  <P>
+                    We get a discount on goods at Bow Cannabis over the course
+                    of the weekend. Go support the local weed shop, man. Just
+                    tell them you're with me 🤙
+                  </P>
+                </li>
+                <li className={styles.ListItem}>
+                  <P>
+                    I've got 10 cans of paint for each artist. I cleared out
+                    Beast's garage and got a mixed bag of Loop and Montana. I'll
+                    hand out the paint at 10am on Saturday first come, first
+                    served styles. If you're on a wall with Hebrw, Toner, or
+                    Ashk, chat with them about scheme so we can try to proddy
+                    the larger walls 🎨
+                  </P>
+                </li>
+              </ol>
+            </div>
             <P>
               Stoked you can make it. Please HMU if you have any questions at
               all!
