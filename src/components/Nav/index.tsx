@@ -60,6 +60,11 @@ const Nav = ({ client }) => {
             </Link>
           </li>
           <li className={styles.LinkWrapper}>
+            <Link className={styles.Link} to="/about">
+              About
+            </Link>
+          </li>
+          <li className={styles.LinkWrapper}>
             <Link className={styles.Link} to="/market">
               Market
             </Link>

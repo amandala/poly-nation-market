@@ -1,12 +1,38 @@
 @import "../../styles/variables";
 
 .Left {
-  padding: 20px;
+  border-radius: 50px;
+  padding: 30px;
   background-color: rgba(34, 29, 52, 0.7);
 }
 
-@include medium {
-  .Left {
-    max-width: 50%;
+.Buzz {
+  margin-bottom: 24px;
+}
+
+.Intro {
+  margin-bottom: 45px;
+}
+
+.Bold {
+  font-weight: 700;
+}
+
+.Link {
+  text-decoration: none;
+  color: white;
+  &:hover,
+  :visited {
+    color: $ziggurat-blue;
+  }
+}
+
+.Wrapper {
+  margin: 0 20px;
+}
+
+@include large {
+  .Wrapper {
+    margin: 0;
   }
 }

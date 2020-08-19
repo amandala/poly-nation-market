@@ -12,10 +12,12 @@
 
 .P {
   font-family: $OpenSans;
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 22px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
   margin-bottom: 24px;
+  color: white;
+  margin-top: 0;
 
   &Small {
     font-size: 16px;
@@ -32,6 +34,7 @@
   font-size: 2.5rem;
   line-height: 2.5rem;
   text-transform: uppercase;
+  letter-spacing: 1.1px;
 }
 
 .H2 {
@@ -43,14 +46,14 @@
 
 .H3 {
   font-family: $Bowlby;
-  font-weight: 400;
+  letter-spacing: 1.1px;
   margin-bottom: 6px;
   font-size: 20px;
 }
 
 .H4 {
   font-family: $OpenSans;
-  font-weight: 200;
+  font-weight: 700;
   font-size: 18px;
   margin-bottom: 4px;
 }
