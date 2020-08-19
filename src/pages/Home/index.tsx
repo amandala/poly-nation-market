@@ -19,11 +19,18 @@ const Home = () => {
           <div className={styles.Welcome}>
             <H1>Welcome to Pollination Livestream</H1>
             <P>
-              A VibeHive Produtions event in collaboration with the Big Kitty
-              Crew. We're bringing you an art and music livestream party
-              featuring live music from Calgary, AB Canada, with remote feature
-              takeovers from the UK every 2 hours, and a two day live graffiti
-              mural jam hosted by Lone.
+              What an amazing world with so many beeautiful flowers blooming in
+              their natural habitat. The way to maximize the evolution of these
+              beeautiful specimens is with cross pollination, and that is just
+              what this PolliNation event is about. The sharing of sounds,
+              visuals, ideas, and things we all collectively love. When rich
+              data is passed around an ecosystem it makes every flower thrive
+              and live it’s best life. That allows more people to enjoy those
+              beeautiful flowers and maybe even some delicious fruit.
+              PolliNation is a garden of the most hearty beings who just want to
+              share their beeauty with anyone that enjoys the same things they
+              do. So come hang out in our garden of beeauty, enjoy the fruits of
+              lovely labour, and bee happy!
             </P>
           </div>
         </div>
