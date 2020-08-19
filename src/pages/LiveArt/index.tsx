@@ -37,8 +37,8 @@ const LiveArt = () => {
               <H2>Location</H2>
               <P>
                 The stage and street side wall are located at 6324 Bowness Road
-                NW. Come find my colorful camper in the alley way when you get
-                here!
+                NW. That's where most of the action is. I've hidden my trailer
+                in the alley. Come find me when you get here!
               </P>
               <iframe
                 title="location"
