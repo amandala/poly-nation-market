@@ -49,6 +49,14 @@
   margin-bottom: 14px;
 }
 
+.Title {
+  margin-bottom: 5px;
+}
+
+.Subtitle {
+  margin-bottom: 24px;
+}
+
 @include medium {
   .Twitch {
     height: 800px;

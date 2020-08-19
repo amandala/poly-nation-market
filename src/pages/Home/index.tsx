@@ -17,8 +17,8 @@ const Home = () => {
             className={styles.Logo}
           />
           <div className={styles.Welcome}>
-            <H1>Welcome to Pollination Livestream</H1>
-            <H4>
+            <H1 className={styles.Title}>Welcome to Pollination Livestream</H1>
+            <H4 className={styles.Subtitle}>
               A Vibe Hive Productions event in collaboration with the Big Kitty
               Crew
             </H4>
