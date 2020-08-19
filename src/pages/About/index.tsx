@@ -34,6 +34,11 @@ const About = () => {
               talented visual artists decorate 5 giant walls with graffiti and
               street art.
             </P>
+            <P>
+              Not in Calgary? No worries, you can still join in on the fun.
+              We'll be livestreaming all the action on the homepage for the
+              global hive. The party starts at noon on Saturday August 22.
+            </P>
           </div>
           <H2>We are eternally grateful to our generous partners!</H2>
           <div>
