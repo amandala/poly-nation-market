@@ -94,12 +94,12 @@ const LiveArt = () => {
                 </li>
                 <li className={styles.ListItem}>
                   <P>
-                    We are painting various buildings on one block Bowness Road.
-                    The space has been donated to us by the busninesses, but
-                    there is mixed enthusiasm from the community. We need to be
-                    very intentional about creating a welcoming legal regulated
-                    exhibit for the entire community to enjoy, so it doesn't get
-                    buffed over right away.{" "}
+                    We are painting various buildings within one block on
+                    Bowness Road. The space has been donated to us by the
+                    busninesses, but there is mixed enthusiasm from the
+                    community. We need to be very intentional about creating a
+                    welcoming legal regulated exhibit for the entire community
+                    to enjoy, so it doesn't get buffed over right away.{" "}
                     <span className={styles.Bold}>
                       So, the art absolutely can not contain any gang
                       affiliations, swears words, derogatory terms, political
