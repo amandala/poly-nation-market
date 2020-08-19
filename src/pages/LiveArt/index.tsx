@@ -42,7 +42,7 @@ const LiveArt = () => {
               </P>
               <iframe
                 title="location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1877.3658508050437!2d-113.98996042320262!3d51.05507494696671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717b2a20c2df9f%3A0x9013fa5e79ed8f!2sThe%20Calgary%20Central%20Sportsplex!5e0!3m2!1sen!2sca!4v1594967843408!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10025.006254907736!2d-114.1793155767421!3d51.08536473687913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716ec2abb60d99%3A0x17d1be8ff9c6576d!2s6324%20Bowness%20Rd%20NW%2C%20Calgary%2C%20AB%20T3B%200E5!5e0!3m2!1sen!2sca!4v1597819456293!5m2!1sen!2sca"
                 width="600"
                 height="450"
                 aria-hidden="false"
