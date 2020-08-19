@@ -33,9 +33,9 @@
 
 .Definitions {
   border-radius: 50px;
-  padding: 30px;
+  padding: 20px;
   background-color: rgba(34, 29, 52, 0.7);
-  margin: 0 24px;
+  margin: 0;
 }
 
 .Welcome {
@@ -80,6 +80,7 @@
   .Definition {
     display: flex;
     flex-direction: row;
+    padding: 30px 40px;
     align-items: center;
   }
 
