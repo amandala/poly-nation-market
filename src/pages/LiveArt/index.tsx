@@ -51,18 +51,24 @@ const LiveArt = () => {
             <div className={styles.Section}>
               <H2>Timeline</H2>
               <div className={styles.TimelineEvent}>
-                <P>SAT August 22 10am - 8pm </P>
+                <P className={styles.Date}>
+                  SAT August 22 <span className={styles.Time}>10am - 8pm</span>
+                </P>
                 <P className={cx(styles.Bold, styles.Event)}> GRAFF JAM</P>
               </div>
               <div className={styles.TimelineEvent}>
-                <P>SAT August 22 10pm - 3am</P>
+                <P className={styles.Date}>
+                  SAT August 22 <span className={styles.Time}>10pm - 3am</span>
+                </P>
                 <P className={cx(styles.Bold, styles.Event)}>
                   {" "}
                   POLLINATION AFTER PARTY
                 </P>
               </div>
               <div className={styles.TimelineEvent}>
-                <P>SUN August 23 10am -8pm </P>
+                <P className={styles.Date}>
+                  SUN August 23 <span className={styles.Time}>10am - 8pm</span>
+                </P>
                 <P className={cx(styles.Bold, styles.Event)}> GRAFF JAM</P>
               </div>
             </div>

@@ -38,6 +38,7 @@
 .TimelineEvent {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .List {
@@ -65,6 +66,10 @@
   margin-bottom: 30px;
 }
 
+.Time {
+  display: block;
+}
+
 @include large {
   .Wrapper {
     margin: 0;
@@ -72,5 +77,21 @@
 
   .Left {
     padding: 40px 30px;
+  }
+
+  .Time {
+    display: inline;
+  }
+
+  .TimelineEvent {
+    justify-content: initial;
+  }
+
+  .Event {
+    text-align: left;
+  }
+
+  .Date {
+    width: 300px;
   }
 }
