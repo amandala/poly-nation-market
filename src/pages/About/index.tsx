@@ -57,7 +57,7 @@ const About = () => {
             </P>
           </div>
           <div>
-            <H3>Main Street Bowness</H3>
+            <H3>Bowness Community Association</H3>
             <P>
               Bowness is lucky to have such an amazing community association,
               and we are lucky to have their support. They've generously
