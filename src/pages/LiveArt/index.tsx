@@ -101,10 +101,10 @@ const LiveArt = () => {
                     welcoming legal regulated exhibit for the entire community
                     to enjoy, so it doesn't get buffed over right away.{" "}
                     <span className={styles.Bold}>
-                      So, the art absolutely can not contain any gang
-                      affiliations, swears words, derogatory terms, political
-                      sentiments, crew beef, or images or phrases that could be
-                      considered offensive to anyone ⚠️
+                      The art absolutely can not contain any gang affiliations,
+                      swears words, derogatory terms, political sentiments, crew
+                      beef, or images or phrases that could be considered
+                      offensive to anyone ⚠️
                     </span>
                   </P>
                 </li>

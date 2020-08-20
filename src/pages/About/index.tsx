@@ -30,11 +30,10 @@ const About = () => {
               <span className={styles.Bold}>We ❤️ Bowness Graffiti Jam</span>{" "}
               from noon to 8pm Saturday and Sunday. Lone from the Big Kitty Crew
               curated a talented group of individuals to bring some beauty and
-              color to a lucky block on Bowness Road. Come down and watch as 24
-              talented visual artists decorate 5 giant walls with graffiti and
-              street art. We've organized a small pop-up market with local
-              artisan goods, and food trucks to keep you refreshed while you're
-              here.
+              color to one lucky block on Bowness Road. Join us as 24 talented
+              visual artists decorate 5 giant walls with graffiti and street
+              art. There will be a small pop-up market with local artisan goods,
+              and food trucks to keep you refreshed while you're here.
             </P>
             <P>
               Not in Calgary? No worries, you can still join in on the fun.{" "}
@@ -53,7 +52,8 @@ const About = () => {
               Bowness is about to get a lot more creative thanks to Bowness
               Arts. Keep your eyes peeled for a brand new art gallery and studio
               opening up right on main street. The new creative hub is the
-              central location for our daytime creations. Come down and say Hi!
+              central location for our daytime creations. Come down and say
+              "Hi"!
             </P>
           </div>
           <div>
@@ -72,7 +72,14 @@ const About = () => {
               delicious food and warm conversation since 1974. They're known for
               their incredible hand made pizzas and quality local Alberta beef.
               Stop in for dinner on Monday or Tuesday and enjoy 15% off dine-in
-              pastas.
+              pastas.{" "}
+              <a
+                href="http://www.theplacerestaurant.ca/"
+                target="_blank"
+                className={styles.Link}
+              >
+                Check out their menu!
+              </a>
             </P>
           </div>
           <div>
