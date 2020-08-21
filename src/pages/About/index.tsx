@@ -40,9 +40,8 @@ const About = () => {
             <P>
               Bowness is about to get a lot more creative thanks to Bowness
               Arts. Keep your eyes peeled for a brand new art gallery and studio
-              opening up right on main street. The new creative hub is the
-              central location for our daytime creations. Come down and say
-              "Hi"!
+              opening up right on main street soon. Special thanks to Sergei for
+              donating the amazing walls for our visual pollinators to paint!
             </P>
           </div>
           <div>
