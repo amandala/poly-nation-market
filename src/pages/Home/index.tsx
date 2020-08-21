@@ -1,10 +1,12 @@
 import React from "react";
 import BeePage from "../../components/BeePage";
 import Section from "../../components/Section";
-import { P, H1, H3, H4 } from "../../components/Typography";
+import { P, H1, H2, H4, H3 } from "../../components/Typography";
 import Footer from "../../components/Footer";
 import styles from "./index.module.scss";
 import TwitchChannel from "../../components/TwitchChannel";
+import lineup from "./lineup.json";
+import lineup2 from "./lineup2.json";
 
 const Home = () => {
   return (
@@ -51,6 +53,43 @@ const Home = () => {
           src={`https://player.twitch.tv/?channel=vibehiveproductions&parent=${process.env.REACT_APP_URL}`}
         ></iframe> */}
       </div>
+      <Section className={styles.Padded}>
+        <div className={styles.Schedule}>
+          <H1 className={styles.ScheduleHeading}>
+            Pollination Livestream Music Schedule
+          </H1>
+          <div className={styles.ScheduleDays}>
+            <div className={styles.ScheduleDay}>
+              <H2 className={styles.Day}>SATURDAY</H2>
+              {lineup.map((row) => (
+                <div>
+                  {row.crew ? (
+                    <H4 className={styles.CrewName}>{row.crew}</H4>
+                  ) : null}
+                  <H3>{row.artist}</H3>
+                  <P className={styles.Time}>
+                    {row.CDN} MST / {row.UK} BST
+                  </P>
+                </div>
+              ))}
+            </div>
+            <div className={styles.ScheduleDay}>
+              <H2 className={styles.Day}>SUNDAY</H2>
+              {lineup2.map((row) => (
+                <div>
+                  {row.crew ? (
+                    <H4 className={styles.CrewName}>{row.crew}</H4>
+                  ) : null}
+                  <H3>{row.artist}</H3>
+                  <P className={styles.Time}>
+                    {row.CDN} MST / {row.UK} BST
+                  </P>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
       <Footer />
     </BeePage>
   );

@@ -14,6 +14,7 @@
 
 .TwitchWrapper {
   width: 100%;
+  margin-bottom: 45px;
 }
 
 .Twitch {
@@ -21,6 +22,10 @@
   height: 300px;
   width: 100%;
   margin-bottom: 24px;
+}
+
+.Padded {
+  margin: 0 20px;
 }
 
 .HeadingTemp {
@@ -31,11 +36,43 @@
   margin-bottom: 24px;
 }
 
-.Definitions {
+.Definitions,
+.Schedule {
   border-radius: 50px;
   padding: 20px;
   background-color: rgba(34, 29, 52, 0.7);
   margin: 0;
+}
+
+.Schedule {
+  padding: 30px;
+}
+
+.ScheduleHeading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ScheduleDay {
+  &:first-of-type {
+    margin-bottom: 45px;
+  }
+}
+
+.Row {
+  margin-bottom: 30px;
+}
+
+.Time {
+  margin-bottom: 15px;
+}
+
+.CrewName {
+  margin-top: 30px;
+}
+
+.Day {
+  margin-bottom: 0;
 }
 
 .Welcome {
@@ -77,6 +114,12 @@
     max-width: 400px;
   }
 
+  .ScheduleDay {
+    &:first-of-type {
+      margin-bottom: 0;
+    }
+  }
+
   .Definition {
     display: flex;
     flex-direction: row;
@@ -87,5 +130,21 @@
   .Word {
     margin-right: 24px;
     min-width: 100px;
+  }
+
+  .ScheduleDay {
+    max-width: 40%;
+  }
+
+  .ScheduleDays {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@include large {
+  .Padded {
+    margin: 0;
   }
 }
