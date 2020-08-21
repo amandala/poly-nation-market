@@ -26,17 +26,6 @@ const About = () => {
               an event fit for a Queen (and her hive).
             </P>
             <P>
-              Are you in Calgary? Come down and join us at the{" "}
-              <span className={styles.Bold}>We ❤️ Bowness Graffiti Jam</span>{" "}
-              from noon to 8pm Saturday and Sunday. Lone from the Big Kitty Crew
-              curated a talented group of individuals to bring some beauty and
-              color to one lucky block on Bowness Road. Join us as 24 talented
-              visual artists decorate 5 giant walls with graffiti and street
-              art. There will be a small pop-up market with local artisan goods,
-              and food trucks to keep you refreshed while you're here.
-            </P>
-            <P>
-              Not in Calgary? No worries, you can still join in on the fun.{" "}
               <span className={styles.Bold}>
                 We'll be livestreaming all the action on the homepage for the
                 global hive. The party starts at noon on Saturday August 22.
@@ -62,7 +51,14 @@ const About = () => {
               Bowness is lucky to have such an amazing community association,
               and we are lucky to have their support. They've generously
               organized a selection of delicious food and refreshing treats to
-              keep the hive nourished while we pollinate.
+              keep the hive nourished while we pollinate.{" "}
+              <a
+                href="http://www.theplacerestaurant.ca/"
+                target="_blank"
+                className={styles.Link}
+              >
+                See what else is happening in the community.
+              </a>
             </P>
           </div>
           <div>
