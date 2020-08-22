@@ -23,17 +23,18 @@
     "CDN": "1:30 PM",
     "UK": "8:30 PM"
   },
-  {
-    "crew": "The heavy CHILL Collective",
-    "artist": "Pete Moss",
-    "CDN": "2:00 PM",
-    "UK": "9:00 PM"
-  },
+
   {
     "crew": "",
     "artist": "Melo.nade",
     "CDN": "2:30 PM",
     "UK": "9:30 PM"
+  },
+  {
+    "crew": "The heavy CHILL Collective",
+    "artist": "Pete Moss",
+    "CDN": "2:00 PM",
+    "UK": "9:00 PM"
   },
   {
     "crew": "Vibe Hive",
