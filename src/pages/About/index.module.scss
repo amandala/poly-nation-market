@@ -21,10 +21,10 @@
 
 .Link {
   text-decoration: none;
-  color: white;
+  color: $ziggurat-blue;
   &:hover,
   :visited {
-    color: $ziggurat-blue;
+    color: $white;
   }
 }
 

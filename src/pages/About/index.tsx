@@ -45,21 +45,44 @@ const About = () => {
             </P>
           </div>
           <div>
+            <H3>Main Street Bowness BIA</H3>
+            <P>
+              The Mainstreet Bowness Business Improvement Area (BIA) supports a
+              wide range of businesses from popular restaurants, unique service
+              shops and nightlife. A small-town atmosphere with free angled
+              parking makes our area an easy-to-shop district where our owners
+              work together to promote and improve our economic vitality. Our
+              long and rich history dates back to the 1940’s with taxi stands
+              and a street car system. Several long standing independent
+              businesses still call Mainstreet Bowness home while they occupy
+              some of the original buildings that still exist.{" "}
+              <a
+                href="https://www.mainstreetbowness.com/about"
+                target="_blank"
+                className={styles.Link}
+              >
+                Read more about their mission
+              </a>
+            </P>
+          </div>
+          <div>
             <H3>Bowness Community Association</H3>
+
             <P>
               Bowness is lucky to have such an amazing community association,
               and we are lucky to have their support. They've generously
               organized a selection of delicious food and refreshing treats to
               keep the hive nourished while we pollinate.{" "}
               <a
-                href="http://www.theplacerestaurant.ca/"
+                href="https://www.mybowness.com/"
                 target="_blank"
                 className={styles.Link}
               >
-                See what else is happening in the community.
+                See why We ❤️ Bowness
               </a>
             </P>
           </div>
+
           <div>
             <H3>The Place Restaurant</H3>
             <P>
@@ -91,14 +114,13 @@ const About = () => {
               The Big Kitty Crew is a multidiciplinary collective of
               female-identifying creative kitties exploring urban expressions,
               building community, and bridging new collaborations across the
-              country through visual and performing arts. Check out what the
-              kitties are up to at{" "}
+              country through visual and performing arts.{" "}
               <a
                 href="https://www.bigkittycrew.com/"
                 target="_blank"
                 className={styles.Link}
               >
-                bigkittycrew.com
+                Check out what the kitties are up to at bigkittycrew.com
               </a>
               .
             </P>
